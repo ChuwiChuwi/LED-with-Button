@@ -1,0 +1,19 @@
+
+int Button = 2;
+int LED = 3;
+
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(Button, INPUT);
+  pinMode(LED, OUTPUT);
+  
+}
+
+void loop() {
+  if (digitalRead(Button) == HIGH) {
+    digitalWrite(LED, HIGH);
+  }
+  else{
+    digitalWrite(LED, LOW);
+  }
+}
